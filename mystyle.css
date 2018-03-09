@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box
+}
+body {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  height: 100%;
+  overflow: visible;
+}
+ul {
+  background-color: white;
+  list-style-type: none;
+  text-transform: uppercase;
+  padding: 25px;
+  font-family: sans-serif;
+}
+.left {
+  float: left;
+  padding: 0px 10px;
+  text-align: left;
+}
+.right {
+  float: right;
+  padding: 0px 10px;
+  text-align: right;
+}
+li {
+  font-family: sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  display: inline-block;
+}
+#menu a {
+    text-decoration:none;
+}
+#header {
+  width: inherit;
+  height: auto;
+  color: white;
+  text-align: left;
+}
+.headertext {
+  margin: 0;
+  padding: 10% 0 20% 5%;
+  line-height: 0.3;
+  font-size: 22px;
+}
+#main {
+  background-color: #CFCFCF;
+  width: inherit;
+  overflow: hidden;
+  height: auto;
+}
+.maintext {
+  line-height: 0.6;
+  padding-left: 5%;
+  font-family: "Arial";
+  text-align: left;
+}
+.mainimg {
+  padding-left: 3%;
+}
+.col {
+  margin: 0;
+  width: 390px;
+  float: left;
+  padding: 15px;
+}
+.img1, .img2, .img3 {
+  width: 360px;
+  height: auto;
+  padding: 15px;
+}
+#footer {
+  background-color: #E8E8E8;
+  text-align: left;
+  padding-left: 3.5%;
+  height: 200px;
+}
+#footer a {
+  color:blue;
+  font-family: sans-serif;
+}
+p {
+  font-family: sans-serif;
+  font-size: 15px
+}
+@media only screen and (min-width: 992px) and (max-width: 2048px) and (orientation: landscape) {
+  body {
+  max-width: 1263px;
+  height: 100%;
+  }
+  #header {
+    background-image: url("https://s3.amazonaws.com/codecademy-content/courses/ltp/img/lodging.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  body {
+    font-family: sans-serif; 
+  }
+    #header {
+    width: 95%;
+    padding: 3%;
+  }
+  ul {
+    background-color: #696969;
+  }
+  .headertext {
+    padding: 5% 5% 5% 0;
+    line-height: 1.5;
+    border-bottom: 1px solid black;
+    color: black;
+  }
+  #main {
+    background-color: white;
+    border-style: none;
+    padding: 0;
+  }
+  #footer {
+    background-color: white;
+  }
+  #footer .col {
+  width: auto;
+  }
+  .mainimg, .maintext {
+    line-height: 1.5;
+    padding: 3%;
+  }
+  .col, .img1, .img2, .img3 {
+    padding: 0 50px 50px 0;
+  }
+  h1, h2, h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .col, .mainimg {
+    width: 90%;
+  }
+    body {
+    font-family: sans-serif; 
+  }
+  .headertext .maintext {
+    width: auto;
+  }
+  ul {
+    background-color: #696969;
+  }
+  #header {
+    background-image: url("https://drive.google.com/open?id=1S4-C2kQMduqHvaPov5z3EBk5_Lql6p_v");
+    width: 90%;
+    padding: 4%;
+  }
+  .headertext {
+    padding: 4% 4% 4% 0;
+    line-height: 1.5;
+    border-bottom: 1px solid black;
+    color: black;
+    width: inherit;
+  }
+  #main {
+    background-color: white;
+    border-style: none;
+    padding: 0;
+  }
+  #footer {
+    background-color: white;
+  }
+  #footer .col {
+  width: auto;
+  }
+  .mainimg, .maintext{
+    line-height: 1.5;
+    padding: 3%;
+  }
+  .col, .img1, .img2, .img3 {
+    padding: 0 50px 50px 0;
+  }
+  h1, h2, h3 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 15px
+  }
+}
